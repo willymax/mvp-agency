@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-schema-org', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-schema-org', '@nuxt/image', '@nuxt/icon'],
   css: ['~/assets/css/main.css'],
   schemaOrg: {
     // Your schema.org configuration for SEO

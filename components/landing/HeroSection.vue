@@ -3,7 +3,6 @@
     className="relative bg-gradient-to-br from-blue-900 to-blue-950 text-white"
   >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-      {/* Main Hero Content */}
       <div
         className="text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-8 items-center"
       >
@@ -32,8 +31,6 @@
             </button>
           </div>
         </div>
-
-        {/* Stats/Features Cards */}
         <div className="mt-12 lg:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="bg-blue-800/30 backdrop-blur-sm rounded-xl p-6">
             <Code className="w-8 h-8 text-blue-400 mb-3" />
