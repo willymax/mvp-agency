@@ -2,6 +2,9 @@
   <div class="flex flex-col gap-16">
     <LandingHeroSection />
     <LandingSocialProofSection />
+    <LandingDevelopmentProcessSection />
+    <LandingWhyChooseUs />
+    <LandingTechStack />
   </div>
 </template>
 

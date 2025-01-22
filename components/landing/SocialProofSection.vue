@@ -37,8 +37,8 @@
               <Icon
                 v-for="n in 5"
                 :key="n"
-                name="uil:github"
-                style="color: black"
+                name="gravity-ui:star"
+                style="color: black; fill: blue"
                 class="w-5 h-5 fill-yellow-400 text-yellow-400"
               />
             </div>

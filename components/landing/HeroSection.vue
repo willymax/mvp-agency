@@ -22,7 +22,7 @@
               className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
             >
               Start Your Project
-              <ArrowRight className="w-5 h-5" />
+              <Icon name="gravity-ui:arrow-right" class="w-5 h-5" />
             </button>
             <button
               className="border border-blue-400 hover:bg-blue-800/50 px-8 py-3 rounded-lg font-semibold"
@@ -33,21 +33,24 @@
         </div>
         <div className="mt-12 lg:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="bg-blue-800/30 backdrop-blur-sm rounded-xl p-6">
-            <Code className="w-8 h-8 text-blue-400 mb-3" />
+            <Icon name="gravity-ui:code" class="w-8 h-8 text-blue-400 mb-3" />
             <h3 className="text-xl font-semibold mb-2">Pre-vetted Seniors</h3>
             <p className="text-blue-100">
               Expert engineers from top African tech companies
             </p>
           </div>
           <div className="bg-blue-800/30 backdrop-blur-sm rounded-xl p-6">
-            <Clock className="w-8 h-8 text-blue-400 mb-3" />
+            <Icon name="gravity-ui:clock" class="w-8 h-8 text-blue-400 mb-3" />
             <h3 className="text-xl font-semibold mb-2">48-Hour Start</h3>
             <p className="text-blue-100">
               From contact to active development in 2 days
             </p>
           </div>
           <div className="bg-blue-800/30 backdrop-blur-sm rounded-xl p-6">
-            <DollarSign className="w-8 h-8 text-blue-400 mb-3" />
+            <Icon
+              name="gravity-ui:circle-dollar"
+              class="w-8 h-8 text-blue-400 mb-3"
+            />
             <h3 className="text-xl font-semibold mb-2">50% Cost Savings</h3>
             <p className="text-blue-100">
               Same quality, half the US agency rates

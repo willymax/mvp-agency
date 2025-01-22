@@ -20,5 +20,8 @@
     "nuxt-schema-org": "^4.1.1",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/gravity-ui": "^1.2.4"
   }
 }
