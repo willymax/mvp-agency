@@ -5,6 +5,7 @@
     <LandingDevelopmentProcessSection />
     <LandingWhyChooseUs />
     <LandingTechStack />
+    <LandingContactForm />
   </div>
 </template>
 
