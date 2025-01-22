@@ -1,5 +1,8 @@
 <template>
-  <LandingHeroSection />
+  <div class="flex flex-col gap-16">
+    <LandingHeroSection />
+    <LandingSocialProofSection />
+  </div>
 </template>
 
 <script setup>
