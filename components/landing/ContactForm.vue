@@ -201,7 +201,6 @@
 </template>
 
 <script setup>
-import validation from '@/utils/validation'
 const mail = useMail()
 const loading = ref(false)
 const userAnswer = ref('')
@@ -241,20 +240,26 @@ const handleSubmit = async () => {
   await new Promise((resolve) => {
     mail
       .send({
-        from: 'John Doe',
+        from: formData.value.name,
         subject: 'Incredible',
-        text: 'This is an incredible test message',
+        text: 'New contact form submission',
+        replyTo: formData.value.email,
+        html: `<p>Name: ${formData.value.name}</p>
+        <p>Email: ${formData.value.email}</p>
+        <p>Company: ${formData.value.company}</p>
+        <p>Project Type: ${formData.value.projectType}</p>
+        <p>Project Description: ${formData.value.projectDescription}</p>
+        <p>Timeline: ${formData.value.timeline}</p>
+        <p>Budget: ${formData.value.budget}</p>`,
       })
       .then(() => {
         resolve()
       })
-    // Send email
-    // await $mail.send({
-    //   subject: 'New Contact Form Submission',
-    //   to: 'foo@bar.de',
-    //   from: 'hello@example.com',
-    //   text: 'Hello World',
-    // })
+      .catch((error) => {
+        console.error(error)
+        alert('An error occurred while sending the email. Please try again.')
+        resolve()
+      })
   })
   loading.value = false
   // Reset form
