@@ -147,6 +147,24 @@
               <option value="50000+">$50,000+</option>
             </select>
           </div>
+
+          <div>
+            <label
+              for="mathChallenge"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Security Check: What is {{ mathProblem.num1 }} +
+              {{ mathProblem.num2 }}?
+            </label>
+            <input
+              id="mathChallenge"
+              v-model="userAnswer"
+              type="number"
+              required
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+              placeholder="Enter the answer"
+            />
+          </div>
         </div>
 
         <button
@@ -183,7 +201,15 @@
 </template>
 
 <script setup>
+import validation from '@/utils/validation'
+const mail = useMail()
 const loading = ref(false)
+const userAnswer = ref('')
+const mathProblem = ref({
+  num1: Math.floor(Math.random() * 10),
+  num2: Math.floor(Math.random() * 10),
+})
+
 const formData = ref({
   name: '',
   email: '',
@@ -195,9 +221,41 @@ const formData = ref({
 })
 
 const handleSubmit = async () => {
+  // Validate math challenge
+  if (
+    Number(userAnswer.value) !==
+    mathProblem.value.num1 + mathProblem.value.num2
+  ) {
+    alert('Incorrect answer to the security check. Please try again.')
+    // Generate new problem
+    mathProblem.value = {
+      num1: Math.floor(Math.random() * 10),
+      num2: Math.floor(Math.random() * 10),
+    }
+    userAnswer.value = ''
+    return
+  }
+
   loading.value = true
   // Simulate API call
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+  await new Promise((resolve) => {
+    mail
+      .send({
+        from: 'John Doe',
+        subject: 'Incredible',
+        text: 'This is an incredible test message',
+      })
+      .then(() => {
+        resolve()
+      })
+    // Send email
+    // await $mail.send({
+    //   subject: 'New Contact Form Submission',
+    //   to: 'foo@bar.de',
+    //   from: 'hello@example.com',
+    //   text: 'Hello World',
+    // })
+  })
   loading.value = false
   // Reset form
   formData.value = {
@@ -208,6 +266,12 @@ const handleSubmit = async () => {
     projectDescription: '',
     timeline: '',
     budget: '',
+  }
+  // Reset math challenge along with form
+  userAnswer.value = ''
+  mathProblem.value = {
+    num1: Math.floor(Math.random() * 10),
+    num2: Math.floor(Math.random() * 10),
   }
 }
 </script>

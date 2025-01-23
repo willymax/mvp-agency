@@ -10,13 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@dword-design/functions": "^6.0.1",
     "@nuxt/icon": "1.10.3",
     "@nuxt/image": "1.9.0",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/tailwindcss": "6.13.1",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^12.4.0",
     "nuxt": "^3.15.2",
+    "nuxt-mail": "5.1.1",
     "nuxt-schema-org": "^4.1.1",
     "vue": "latest",
     "vue-router": "latest"
