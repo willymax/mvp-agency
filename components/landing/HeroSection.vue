@@ -18,12 +18,14 @@
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
-            <button
-              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
-            >
-              Start Your Project
-              <Icon name="gravity-ui:arrow-right" class="w-5 h-5" />
-            </button>
+            <NuxtLink to="#contact-us">
+              <button
+                className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
+              >
+                Start Your Project
+                <Icon name="gravity-ui:arrow-right" class="w-5 h-5" />
+              </button>
+            </NuxtLink>
             <button
               className="border border-blue-400 hover:bg-blue-800/50 px-8 py-3 rounded-lg font-semibold"
             >

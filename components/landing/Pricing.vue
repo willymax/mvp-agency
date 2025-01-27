@@ -29,17 +29,18 @@
               :key="featureIndex"
               className="flex items-center gap-3"
             >
-              <Check className="w-5 h-5 text-green-500" />
+              <Icon class="w-5 h-5 text-green-500" name="gravity-ui:check" />
               <span>{{ feature }}</span>
             </div>
           </div>
-
-          <button
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
-          >
-            Get Started
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          <NuxtLink to="#contact-us">
+            <button
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
+            >
+              Get Started
+              <Icon class="w-5 h-5" name="gravity-ui:arrow-right" />
+            </button>
+          </NuxtLink>
         </div>
       </div>
 
@@ -67,10 +68,12 @@
 </template>
 
 <script setup>
+import { Icon } from '#components'
+
 const plans = [
   {
     name: 'MVP Package',
-    price: 'Starting at $15,000',
+    price: 'Starting at $5,000',
     duration: '30 Days',
     description:
       'Perfect for validating your idea and getting to market quickly',
@@ -87,7 +90,7 @@ const plans = [
   },
   {
     name: 'Dedicated Team',
-    price: 'Starting at $8,000',
+    price: 'Starting at $1,500',
     duration: 'per developer/month',
     description: 'Ideal for ongoing development and scaling your product',
     features: [
