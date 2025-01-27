@@ -24,7 +24,7 @@ nuxtApp.hook('vue:error', (err) => {
 
 // Add global meta tags
 useHead({
-  titleTemplate: '%s | Your Company Name',
+  titleTemplate: '%s | Nalgi Labs',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,7 +35,20 @@ useHead({
     },
   ],
   link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon-96x96.png',
+      sizes: '96x96',
+    },
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'shortcut icon', href: '/favicon.ico' },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      href: '/apple-touch-icon.png',
+    },
+    { rel: 'manifest', href: '/site.webmanifest' },
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',

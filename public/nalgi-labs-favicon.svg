@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#4299E1"/>
+  
+  <!-- Clear 'N' shape -->
+  <path d="M10 24 L10 8 L22 24 L22 8" stroke="white" stroke-width="3" fill="none"/>
+  
+  <!-- Connecting dot elements -->
+  <circle cx="10" cy="8" r="2" fill="white"/>
+  <circle cx="22" cy="24" r="2" fill="white"/>
+</svg>

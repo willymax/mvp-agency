@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col gap-16">
     <LandingHeroSection />
-    <LandingSocialProofSection />
+    <LandingSocialProofSection id="testimonials" />
     <LandingDevelopmentProcessSection />
     <LandingWhyChooseUs />
     <LandingTechStack />
-    <LandingContactForm />
+    <!-- <LandingContactForm id="contact-us" /> -->
   </div>
 </template>
 

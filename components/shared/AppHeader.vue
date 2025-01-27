@@ -2,7 +2,11 @@
   <header class="fixed w-full bg-white/80 backdrop-blur-sm z-50">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
       <NuxtLink to="/" class="flex items-center">
-        <img src="~/assets/images/logo.svg" alt="Logo" class="h-8" />
+        <img
+          src="~/assets/images/nalgi-labs-logo.svg"
+          alt="Logo"
+          class="h-16"
+        />
       </NuxtLink>
 
       <!-- Mobile menu button -->
