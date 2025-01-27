@@ -153,8 +153,7 @@
               for="mathChallenge"
               class="block text-sm font-medium text-gray-700"
             >
-              Security Check: What is {{ mathProblem.num1 }} +
-              {{ mathProblem.num2 }}?
+              Security Check: What is {{ formattedMathProblem }}
             </label>
             <input
               id="mathChallenge"
@@ -205,8 +204,8 @@ const mail = useMail()
 const loading = ref(false)
 const userAnswer = ref('')
 const mathProblem = ref({
-  num1: Math.floor(Math.random() * 10),
-  num2: Math.floor(Math.random() * 10),
+  num1: 0,
+  num2: 0,
 })
 
 const formData = ref({
@@ -279,6 +278,17 @@ const handleSubmit = async () => {
     num2: Math.floor(Math.random() * 10),
   }
 }
+// computed formattedMathProblem
+const formattedMathProblem = computed(() => {
+  return `${mathProblem.value.num1} + ${mathProblem.value.num2}`
+})
+// on mounted generate new math problem
+onMounted(() => {
+  mathProblem.value = {
+    num1: Math.floor(Math.random() * 10),
+    num2: Math.floor(Math.random() * 10),
+  }
+})
 </script>
 
 <style></style>

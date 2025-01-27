@@ -42,8 +42,12 @@
 <script setup>
 const isOpen = ref(false)
 const navigationItems = [
-  { name: 'Features', path: '#features' },
-  { name: 'Testimonials', path: '#testimonials' },
+  { name: 'How it works', path: '#how-it-works' },
+  { name: 'Why us', path: '#why-choose-us' },
+  { name: 'Tech Stack', path: '#tech-stack' },
   { name: 'Pricing', path: '#pricing' },
 ]
+const isHeaderTransparent = computed(() => {
+  return useRoute().path === '/'
+})
 </script>

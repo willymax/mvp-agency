@@ -2,10 +2,12 @@
   <div class="flex flex-col gap-16">
     <LandingHeroSection />
     <LandingSocialProofSection id="testimonials" />
-    <LandingDevelopmentProcessSection />
-    <LandingWhyChooseUs />
-    <LandingTechStack />
-    <!-- <LandingContactForm id="contact-us" /> -->
+    <LandingDevelopmentProcessSection id="how-it-works" />
+    <LandingWhyChooseUs id="why-choose-us" />
+    <LandingTechStack id="tech-stack" />
+    <LandingContactForm id="contact-us" />
+    <div id="features"></div>
+    <LandingPricing id="pricing" />
   </div>
 </template>
 

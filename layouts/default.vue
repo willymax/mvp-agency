@@ -9,10 +9,10 @@
     </a>
 
     <!-- Header -->
-    <SharedAppHeader :is-transparent="isHeaderTransparent" />
+    <SharedAppHeader :is-transparent="isHeaderTransparent" v-cloak />
 
     <!-- Main content -->
-    <main id="main-content" class="flex-grow">
+    <main id="main-content" class="flex-grow pt-24">
       <!-- Page loading overlay -->
       <div
         v-if="isLoading"
@@ -28,7 +28,7 @@
     </main>
 
     <!-- Newsletter signup (optional) -->
-    <section v-if="showNewsletter" class="bg-gray-50 py-12">
+    <section v-if="showNewsletter" class="bg-gray-50 py-12" v-cloak>
       <div class="container mx-auto px-4">
         <SharedNewsletterSignup @close="showNewsletter = false" />
       </div>
@@ -38,13 +38,18 @@
     <SharedAppFooter />
 
     <!-- Cookie consent banner -->
-    <SharedCookieConsent v-if="showCookieConsent" @accept="acceptCookies" />
+    <SharedCookieConsent
+      v-if="showCookieConsent"
+      @accept="acceptCookies"
+      v-cloak
+    />
 
     <!-- Back to top button -->
     <button
       v-show="showBackToTop"
       @click="scrollToTop"
       class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 z-40"
+      v-cloak
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
