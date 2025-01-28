@@ -124,9 +124,11 @@
           </li>
         </ul>
         <div className="pt-4">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-            Schedule a Free Consultation
-          </button>
+          <NuxtLink to="#contact-us">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Schedule a Free Consultation
+            </button>
+          </NuxtLink>
         </div>
       </div>
     </div>

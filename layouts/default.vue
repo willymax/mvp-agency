@@ -35,7 +35,9 @@
       </ClientOnly> -->
 
     <!-- Footer -->
-    <SharedAppFooter />
+    <ClientOnly>
+      <SharedAppFooter />
+    </ClientOnly>
 
     <!-- Cookie consent banner -->
     <ClientOnly>

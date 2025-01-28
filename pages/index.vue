@@ -6,7 +6,9 @@
     <LandingWhyChooseUs id="why-choose-us" />
     <LandingTechStack id="tech-stack" />
     <LandingPricing id="pricing" />
-    <LandingContactForm id="contact-us" />
+    <ClientOnly>
+      <LandingContactForm id="contact-us" />
+    </ClientOnly>
     <div id="features"></div>
   </div>
 </template>
