@@ -24,6 +24,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@iconify-json/gravity-ui": "^1.2.4"
+    "@iconify-json/gravity-ui": "^1.2.4",
+    "@iconify-json/material-symbols": "^1.2.13"
   }
 }

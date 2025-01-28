@@ -66,7 +66,7 @@ const steps = [
     author: 'Rachel K., Product Manager',
   },
   {
-    icon: 'ix:handshake',
+    icon: 'material-symbols:handshake',
     title: 'Agreement & Setup',
     duration: 'Day 2',
     description:
