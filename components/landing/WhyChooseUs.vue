@@ -1,51 +1,51 @@
 <template>
-  <section className="py-16">
-    <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+  <section class="py-16">
+    <div class="bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
             Why Choose Our MVP Agency?
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
+          <p class="mt-4 text-xl text-gray-600">
             Get your software ideas to market faster and more efficiently
           </p>
         </div>
 
-        <div className="mt-16">
-          <div className="space-y-12">
+        <div class="mt-16">
+          <div class="space-y-12">
             <div
               v-for="(benefit, index) in benefits"
               :key="index"
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              class="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
                   {{ benefit.title }}
                 </h3>
-                <p className="text-gray-600 mb-6">{{ benefit.description }}</p>
+                <p class="text-gray-600 mb-6">{{ benefit.description }}</p>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="flex items-start space-x-3">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="flex items-start space-x-3">
                     <Icon
                       name="gravity-ui:circle-check"
                       class="h-6 w-6 text-green-500 flex-shrink-0"
                     />
                     <div>
-                      <h4 className="font-medium text-gray-900">With Us</h4>
-                      <p className="mt-1 text-gray-600">{{ benefit.us }}</p>
+                      <h4 class="font-medium text-gray-900">With Us</h4>
+                      <p class="mt-1 text-gray-600">{{ benefit.us }}</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-3">
+                  <div class="flex items-start space-x-3">
                     <Icon
                       name="gravity-ui:circle-xmark"
                       class="h-6 w-6 text-red-500 flex-shrink-0"
                     />
                     <div>
-                      <h4 className="font-medium text-gray-900">
+                      <h4 class="font-medium text-gray-900">
                         Freelance Platforms
                       </h4>
-                      <p className="mt-1 text-gray-600">{{ benefit.them }}</p>
+                      <p class="mt-1 text-gray-600">{{ benefit.them }}</p>
                     </div>
                   </div>
                 </div>
@@ -53,10 +53,10 @@
             </div>
           </div>
 
-          <div className="mt-12 text-center">
+          <div class="mt-12 text-center">
             <NuxtLink to="#contact-us">
               <button
-                className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
+                class="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
               >
                 Start Your Project Today
               </button>

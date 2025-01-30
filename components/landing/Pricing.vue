@@ -1,33 +1,33 @@
 <template>
-  <div className="bg-gray-50 py-16">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">
+  <div class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">
           Transparent Pricing, Exceptional Value
         </h2>
-        <p className="text-xl text-gray-600">
+        <p class="text-xl text-gray-600">
           50% lower than US agencies with the same quality guarantee
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-8">
         <div
           v-for="(plan, index) in plans"
           :key="index"
-          className="bg-white rounded-xl p-8 shadow-sm"
+          class="bg-white rounded-xl p-8 shadow-sm"
         >
-          <h3 className="text-2xl font-semibold mb-2">{{ plan.name }}</h3>
-          <div className="text-3xl font-bold text-blue-600 mb-2">
+          <h3 class="text-2xl font-semibold mb-2">{{ plan.name }}</h3>
+          <div class="text-3xl font-bold text-blue-600 mb-2">
             {{ plan.price }}
           </div>
-          <div className="text-gray-600 mb-4">{{ plan.duration }}</div>
-          <p className="text-gray-600 mb-6">{{ plan.description }}</p>
+          <div class="text-gray-600 mb-4">{{ plan.duration }}</div>
+          <p class="text-gray-600 mb-6">{{ plan.description }}</p>
 
-          <div className="space-y-4 mb-8">
+          <div class="space-y-4 mb-8">
             <div
               v-for="(feature, featureIndex) in plan.features"
               :key="featureIndex"
-              className="flex items-center gap-3"
+              class="flex items-center gap-3"
             >
               <Icon class="w-5 h-5 text-green-500" name="gravity-ui:check" />
               <span>{{ feature }}</span>
@@ -35,7 +35,7 @@
           </div>
           <NuxtLink to="#contact-us">
             <button
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
             >
               Get Started
               <Icon class="w-5 h-5" name="gravity-ui:arrow-right" />
@@ -44,22 +44,22 @@
         </div>
       </div>
 
-      <div className="mt-12 bg-blue-50 rounded-xl p-8">
-        <h3 className="text-2xl font-semibold mb-6 text-center">
+      <div class="mt-12 bg-blue-50 rounded-xl p-8">
+        <h3 class="text-2xl font-semibold mb-6 text-center">
           Why We're Different
         </h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="font-bold text-2xl text-blue-600 mb-2">$30,000</div>
-            <div className="text-gray-600">Typical US Agency MVP Cost</div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="font-bold text-2xl text-blue-600 mb-2">$30,000</div>
+            <div class="text-gray-600">Typical US Agency MVP Cost</div>
           </div>
-          <div className="text-center">
-            <div className="font-bold text-2xl text-blue-600 mb-2">$15,000</div>
-            <div className="text-gray-600">Our MVP Package</div>
+          <div class="text-center">
+            <div class="font-bold text-2xl text-blue-600 mb-2">$15,000</div>
+            <div class="text-gray-600">Our MVP Package</div>
           </div>
-          <div className="text-center">
-            <div className="font-bold text-2xl text-green-600 mb-2">50%</div>
-            <div className="text-gray-600">Cost Savings</div>
+          <div class="text-center">
+            <div class="font-bold text-2xl text-green-600 mb-2">50%</div>
+            <div class="text-gray-600">Cost Savings</div>
           </div>
         </div>
       </div>

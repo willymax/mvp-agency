@@ -1,42 +1,42 @@
 <template>
-  <div className="bg-gray-50 py-16">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">
+  <div class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">
           From Contact to Code in 48 Hours
         </h2>
-        <p className="text-xl text-gray-600">
+        <p class="text-xl text-gray-600">
           Our streamlined process gets you from idea to development in record
           time
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div v-for="(step, index) in steps" :key="index" className="relative">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div v-for="(step, index) in steps" :key="index" class="relative">
           <!-- {/* Connector Line */}} -->
           <div
             v-if="index < steps.length - 1"
-            className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-blue-200 z-0"
+            class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-blue-200 z-0"
           />
           <!-- {/* Step Card */}} -->
-          <div className="bg-white rounded-xl p-6 shadow-sm relative z-10">
+          <div class="bg-white rounded-xl p-6 shadow-sm relative z-10">
             <div
-              className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4"
             >
               <Icon :name="step.icon" class="w-8 h-8 text-blue-600" />
             </div>
-            <div className="text-blue-600 font-medium mb-2">
+            <div class="text-blue-600 font-medium mb-2">
               {{ step.duration }}
             </div>
-            <h3 className="text-xl font-semibold mb-3">{{ step.title }}</h3>
-            <p className="text-gray-600 mb-4">{{ step.description }}</p>
+            <h3 class="text-xl font-semibold mb-3">{{ step.title }}</h3>
+            <p class="text-gray-600 mb-4">{{ step.description }}</p>
 
             <!-- {/* Testimonial */}} -->
-            <div className="border-t pt-4 mt-4">
-              <p className="text-sm italic text-gray-600 mb-2">
+            <div class="border-t pt-4 mt-4">
+              <p class="text-sm italic text-gray-600 mb-2">
                 "{{ step.quote }}"
               </p>
-              <p className="text-sm text-gray-500">- {{ step.author }}</p>
+              <p class="text-sm text-gray-500">- {{ step.author }}</p>
             </div>
           </div>
         </div>
