@@ -49,7 +49,7 @@
         Valley costs."
       </p>
       <p class="text-center text-xs mt-2 text-gray-400">
-        - Sarah Chen, CEO of TechStart Inc.
+        - Elizabeth Mwenga, CEO of TechStart Inc.
       </p>
     </div>
 

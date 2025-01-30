@@ -20,7 +20,7 @@
               <button
                 class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
               >
-                Start Your Project
+                Get Your Product Built Today
                 <Icon name="gravity-ui:arrow-right" class="w-5 h-5" />
               </button>
             </NuxtLink>

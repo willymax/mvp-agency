@@ -76,7 +76,7 @@ const testimonials = [
   {
     quote:
       'Their team delivered our MVP in just 28 days. The quality exceeded our expectations and helped us secure seed funding.',
-    author: 'Sarah Chen',
+    author: 'Elizabeth Mwenga',
     role: 'Founder & CEO',
     company: 'HealthTech Solutions',
     image: '/api/placeholder/64/64',
@@ -84,7 +84,7 @@ const testimonials = [
   {
     quote:
       'Working directly with senior engineers made a huge difference. They brought insights that helped us avoid costly mistakes.',
-    author: 'Michael Roberts',
+    author: 'Michael Williams',
     role: 'CTO',
     company: 'FinanceFlow',
     image: '/api/placeholder/64/64',

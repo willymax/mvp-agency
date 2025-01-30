@@ -74,6 +74,7 @@
 </template>
 
 <script setup>
+const { $safeLocalStorage } = useNuxtApp()
 const isLoading = ref(false)
 const showNewsletter = ref(true)
 const showCookieConsent = ref(true)
@@ -93,7 +94,7 @@ onMounted(() => {
   if (import.meta.client) {
     window.addEventListener('scroll', handleScroll)
     // Check if cookies were previously accepted
-    showCookieConsent.value = !localStorage.getItem('cookiesAccepted')
+    showCookieConsent.value = !$safeLocalStorage.getItem('cookiesAccepted')
   }
 })
 onUnmounted(() => {
@@ -113,7 +114,7 @@ const scrollToTop = () => {
 // Cookie consent handler
 const acceptCookies = () => {
   showCookieConsent.value = false
-  localStorage.setItem('cookiesAccepted', 'true')
+  $safeLocalStorage.setItem('cookiesAccepted', 'true')
 }
 </script>
 
