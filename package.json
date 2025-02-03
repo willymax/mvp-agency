@@ -19,6 +19,7 @@
     "@vueuse/core": "^12.4.0",
     "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.15.2",
+    "nuxt-calendly": "0.1.21",
     "nuxt-mail": "5.1.1",
     "nuxt-schema-org": "^4.1.1",
     "vue": "latest",

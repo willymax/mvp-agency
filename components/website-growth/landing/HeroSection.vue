@@ -37,7 +37,7 @@
               />
             </svg>
           </button>
-          <NuxtLink to="#pricing">
+          <NuxtLink to="#plans">
             <button
               class="border border-blue-400 hover:bg-blue-800/50 px-8 py-3 rounded-lg font-semibold"
             >

@@ -21,17 +21,21 @@
             </a>
             <!-- CTA Button with User Profile Pic -->
             <div class="flex items-center justify-center">
-              <button
-                @click="handleCtaClick"
-                class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+              <NuxtLink
+                to="https://calendly.com/william-k-makau/30min"
+                target="_blank"
               >
-                <img
-                  src="~/assets/images/william-makau.jpg"
-                  alt="Website Growth Engine"
-                  class="h-10 rounded-full"
-                />
-                <span class="text-sm font-medium">Call to Action</span>
-              </button>
+                <button
+                  class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+                >
+                  <img
+                    src="~/assets/images/william-makau.jpg"
+                    alt="Website Growth Engine"
+                    class="h-10 rounded-full"
+                  />
+                  <span class="text-sm font-medium">Call to Action</span>
+                </button>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -85,9 +89,8 @@ const userProfilePic = '~/assets/images/william-makau.jpg'
 const navItems = [
   { name: 'Services', href: '#services' },
   { name: 'How It Works', href: '#how-it-works' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Case Studies', href: '#case-studies' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Pricing', href: '#plans' },
+  // { name: 'Case Studies', href: '#case-studies' },
 ]
 const handleCtaClick = () => {}
 </script>

@@ -32,6 +32,9 @@ dependencies:
   nuxt:
     specifier: ^3.15.2
     version: 3.15.2(typescript@5.7.3)(vite@6.0.7)
+  nuxt-calendly:
+    specifier: 0.1.21
+    version: 0.1.21
   nuxt-mail:
     specifier: 5.1.1
     version: 5.1.1
@@ -5080,6 +5083,17 @@ packages:
   /nuxt-alias-path@2.0.0:
     resolution: {integrity: sha512-rkitqBhqyW+UKWAGHAzwHmIWnZ5FLICSkiPdO/vHllKXG7lqtD7Dtnc+a2HNblD5iVNT6jwI+v7gajBLuUa+Zw==}
     engines: {node: '>=18'}
+    dev: false
+
+  /nuxt-calendly@0.1.21:
+    resolution: {integrity: sha512-2ZJzRJNmfHfR5R+jsXndSXS+jzKSkaHT0CGOr6ez7BtOypnlJWzUKTQCNisKF7JlkfjNd0Gb8LL2YhathZPCtA==}
+    dependencies:
+      '@nuxt/kit': 3.15.2(magicast@0.3.5)
+      defu: 6.1.4
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
     dev: false
 
   /nuxt-mail@5.1.1:

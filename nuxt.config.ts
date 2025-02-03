@@ -9,11 +9,16 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     'nuxt-mail',
+    '@vueuse/motion/nuxt',
+    'nuxt-calendly',
   ],
   css: ['~/assets/css/main.css'],
   schemaOrg: {
     // Your schema.org configuration for SEO
     // TODO: add schema.org configuration
+  },
+  build: {
+    transpile: ['vue-countup-v3'],
   },
   runtimeConfig: {
     public: {
