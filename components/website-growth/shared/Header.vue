@@ -19,6 +19,8 @@
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+const { isScrolled } = useScroll()
+</script>
 
 <style lang="scss" scoped></style>

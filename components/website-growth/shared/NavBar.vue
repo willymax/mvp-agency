@@ -10,7 +10,7 @@
       <!-- Desktop Navigation -->
       <div class="hidden sm:block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-center space-x-8 py-4">
+          <div class="flex justify-center items-center space-x-8 py-4">
             <a
               v-for="item in navItems"
               :key="item.name"
@@ -19,6 +19,20 @@
             >
               {{ item.name }}
             </a>
+            <!-- CTA Button with User Profile Pic -->
+            <div class="flex items-center justify-center">
+              <button
+                @click="handleCtaClick"
+                class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+              >
+                <img
+                  src="~/assets/images/william-makau.jpg"
+                  alt="Website Growth Engine"
+                  class="h-10 rounded-full"
+                />
+                <span class="text-sm font-medium">Call to Action</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -32,10 +46,14 @@
           <span class="text-sm font-medium text-gray-700">Menu</span>
           <Icon
             v-if="isMobileMenuOpen"
-            name="lucide:x"
+            name="material-symbols:close"
             class="h-6 w-6 text-gray-600"
           />
-          <Icon v-else name="lucide:menu" class="h-6 w-6 text-gray-600" />
+          <Icon
+            v-else
+            name="material-symbols:menu"
+            class="h-6 w-6 text-gray-600"
+          />
         </button>
 
         <!-- Mobile Menu -->
@@ -60,8 +78,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-const isScrolled = ref(false)
+const { isScrolled } = useScroll()
 const isMobileMenuOpen = ref(false)
+const userProfilePic = '~/assets/images/william-makau.jpg'
 
 const navItems = [
   { name: 'Services', href: '#services' },
@@ -70,17 +89,5 @@ const navItems = [
   { name: 'Case Studies', href: '#case-studies' },
   { name: 'Contact', href: '#contact' },
 ]
-
-// Handle scroll effect for navbar
-const handleScroll = () => {
-  isScrolled.value = window.scrollY > 10
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+const handleCtaClick = () => {}
 </script>

@@ -24,16 +24,14 @@ nuxtApp.hook('vue:error', (err) => {
 
 // Add global meta tags
 useHead({
-  titleTemplate:
-    '%s | NalgiLabs | Affordable Full-Stack Development Teams for Startups & SaaS Founders',
+  titleTemplate: '%s',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'format-detection', content: 'telephone=no' },
     {
       name: 'description',
-      content:
-        'NalgiLabs provides affordable, full-stack development teams for startups, SaaS founders, and entrepreneurs. Build your MVP on time, within budget, and with high-quality results. Based in Kenya, we deliver cost-effective solutions without compromising on quality.',
+      content: '%s',
     },
   ],
   link: [
