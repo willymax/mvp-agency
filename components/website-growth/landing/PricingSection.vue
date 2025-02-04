@@ -35,9 +35,29 @@
           <p class="text-4xl font-bold text-blue-600 mb-4">
             ${{ plan.price }}<span class="text-base">/month</span>
           </p>
+          <div
+            class="flex items-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-500 dark:bg-gray-800 dark:text-blue-400 dark:border-blue-800"
+            role="alert"
+          >
+            <svg
+              class="shrink-0 inline w-4 h-4 me-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+              />
+            </svg>
+            <span class="sr-only">Info</span>
+            <div>
+              <p>{{ plan.guarantee }}</p>
+            </div>
+          </div>
 
           <!-- Plan Features -->
-          <ul class="space-y-3 mb-6">
+          <ul class="space-y-3 mb-6 mt-5">
             <li
               v-for="feature in plan.features"
               :key="feature"
@@ -75,44 +95,51 @@ const calendlyLink = 'https://calendly.com/william-k-makau/30min'
 const plans = [
   {
     name: 'Starter Plan',
-    price: 99,
+    price: 197,
     features: [
-      'Security & backups',
-      'Uptime monitoring',
-      'Basic SEO optimizations',
-      'Monthly performance report',
+      '24/7 Security & Daily Backups',
+      'Real-Time Uptime Monitoring',
+      'Basic SEO Optimizations (15 Keywords + Competitor Analysis)',
+      'Monthly Performance Report with Actionable Insights',
+      'Free Website Audit (Valued at $200)',
     ],
     ctaText: 'Get Started',
     ctaLink: calendlyLink,
     isPopular: false,
+    guarantee: '100% Hack-Free, 99.99% Uptime, 10-Minute Emergency Response',
   },
   {
-    name: 'Growth Plan',
-    price: 299,
+    name: 'Website Growth Guarantee',
+    price: 499,
     features: [
-      'Everything in Starter',
-      'Advanced SEO updates',
-      'Content strategy',
-      'Conversion rate optimization',
-      'Lead generation tools',
+      '30-Day "First Page or Free" SEO Guarantee',
+      'Turn website visitors into leads (2x conversion rate)',
+      'Google Ranking Blueprint + Monthly Progress Reports',
+      '24/7 Hack Protection & Emergency Support',
+      'FREE Premium Analytics Dashboard ($299/mo value)',
     ],
     ctaText: 'Select Growth Plan',
     ctaLink: calendlyLink,
     isPopular: true,
+    guarantee:
+      'Double your website leads in 90 days or we work free until you do', // Risk reversal
   },
   {
-    name: 'Pro Plan',
-    price: 499,
+    name: 'All-Access Revenue Engine',
+    price: 997,
     features: [
       'Everything in Growth',
-      'Dedicated account manager',
-      'Monthly strategy calls',
-      'Paid ads setup',
-      'Email marketing assistance',
+      'Guaranteed 100 Qualified Leads/Month',
+      'Dedicated Growth Team (Strategist + Tech Expert)',
+      'Paid Ads Setup & Management (Up to $100 Ad Spend Included)',
+      'Convert Leads to Sales System Setup',
+      'Free Quarterly Business Review (Valued at $300)',
     ],
     ctaText: 'Explore Pro Options',
     ctaLink: calendlyLink,
     isPopular: false,
+    guarantee: 'Generate $25,000 in new revenue within 3 months or pay nothing',
+    // High-stakes guarantee
   },
 ]
 </script>

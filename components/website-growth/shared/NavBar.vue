@@ -33,7 +33,9 @@
                     alt="Website Growth Engine"
                     class="h-10 rounded-full"
                   />
-                  <span class="text-sm font-medium">Call to Action</span>
+                  <span class="text-sm font-medium"
+                    >Book a Call With William</span
+                  >
                 </button>
               </NuxtLink>
             </div>

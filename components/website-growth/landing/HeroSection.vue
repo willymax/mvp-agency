@@ -14,9 +14,9 @@
           Turn Your Website into a 24/7 Sales Machine
         </h1>
         <p class="text-xl mb-8 text-gray-700">
-          We optimize and maintain your site to attract more visitors, convert
-          them into customers, and keep them coming back—while ensuring it's
-          secure, fast, and always online.
+          We will optimize and maintain your site to attract more visitors,
+          convert them into customers, and keep them coming back—while ensuring
+          it's secure, fast, and always online.
         </p>
         <div class="flex justify-center gap-5">
           <button
