@@ -4,7 +4,7 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Beyond Just Website Maintenance
+          Beyond Just Website Support
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
           While traditional services keep your site running, we fuel growth at

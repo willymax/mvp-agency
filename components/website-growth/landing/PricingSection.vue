@@ -33,7 +33,7 @@
 
           <!-- Plan Price -->
           <p class="text-4xl font-bold text-blue-600 mb-4">
-            ${{ plan.price }}<span class="text-base">/month</span>
+            Ksh. {{ plan.price }}<span class="text-base">/month</span>
           </p>
           <div
             className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border border-blue-200 dark:bg-gray-800 dark:text-blue-400 dark:border-blue-800"
@@ -90,7 +90,8 @@ const calendlyLink = 'https://calendly.com/william-k-makau/30min'
 const plans = [
   {
     name: 'Starter Plan',
-    price: 197,
+    // price: 197,
+    price: '13,000',
     features: [
       '24/7 Security & Daily Backups',
       'Real-Time Uptime Monitoring',
@@ -105,7 +106,8 @@ const plans = [
   },
   {
     name: 'Website Growth Guarantee',
-    price: 499,
+    // price: 499,
+    price: '55,000',
     features: [
       '30-Day "First Page or Free" SEO Guarantee',
       'Turn website visitors into leads (2x conversion rate)',
@@ -121,7 +123,8 @@ const plans = [
   },
   {
     name: 'All-Access Revenue Engine',
-    price: 997,
+    // price: 997,
+    price: '105,000',
     features: [
       'Everything in Growth',
       'Guaranteed 100 Qualified Leads/Month',
