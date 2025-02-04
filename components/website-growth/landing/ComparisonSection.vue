@@ -36,49 +36,50 @@
             </tr>
           </thead>
           <tbody>
-            <tr
-              class="group hover:bg-gray-50 transition-colors"
-              v-for="(feature, index) in features"
-              :key="index"
-            >
-              <td class="p-6 font-semibold text-gray-700 align-middle">
-                <div class="flex items-center">
-                  <Icon
-                    :name="feature.icon"
-                    class="w-5 h-5 mr-3 text-blue-600"
-                  />
-                  {{ feature.title }}
-                </div>
-              </td>
-              <td class="p-6 text-center text-gray-500 align-middle">
-                <div class="flex flex-col items-center">
-                  <span class="text-red-500">
-                    <Icon name="material-symbols:close" class="w-6 h-6" />
-                  </span>
-                  <span class="text-sm mt-2">{{ feature.traditional }}</span>
-                </div>
-              </td>
-              <td class="p-6 text-center bg-blue-50/30 align-middle">
-                <div class="flex flex-col items-center">
-                  <span class="text-green-600">
-                    <Icon name="gravity-ui:circle-check-fill" class="w-6 h-6" />
-                  </span>
-                  <span class="text-sm font-semibold text-green-700 mt-2">
-                    {{ feature.ourService }}
-                  </span>
-                  <span
-                    v-if="feature.details"
-                    class="text-xs text-gray-600 mt-1"
-                  >
-                    {{ feature.details }}
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr
-              v-if="index < features.length - 1"
-              class="border-b border-gray-200/80"
-            />
+            <template v-for="(feature, index) in features" :key="index">
+              <tr class="group hover:bg-gray-50 transition-colors">
+                <td class="p-6 font-semibold text-gray-700 align-middle">
+                  <div class="flex items-center">
+                    <Icon
+                      :name="feature.icon"
+                      class="w-5 h-5 mr-3 text-blue-600"
+                    />
+                    {{ feature.title }}
+                  </div>
+                </td>
+                <td class="p-6 text-center text-gray-500 align-middle">
+                  <div class="flex flex-col items-center">
+                    <span class="text-red-500">
+                      <Icon name="material-symbols:close" class="w-6 h-6" />
+                    </span>
+                    <span class="text-sm mt-2">{{ feature.traditional }}</span>
+                  </div>
+                </td>
+                <td class="p-6 text-center bg-blue-50/30 align-middle">
+                  <div class="flex flex-col items-center">
+                    <span class="text-green-600">
+                      <Icon
+                        name="gravity-ui:circle-check-fill"
+                        class="w-6 h-6"
+                      />
+                    </span>
+                    <span class="text-sm font-semibold text-green-700 mt-2">
+                      {{ feature.ourService }}
+                    </span>
+                    <span
+                      v-if="feature.details"
+                      class="text-xs text-gray-600 mt-1"
+                    >
+                      {{ feature.details }}
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                v-if="index < features.length - 1"
+                class="border-b border-gray-200/80"
+              />
+            </template>
           </tbody>
         </table>
       </div>
@@ -89,7 +90,7 @@
           class="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl"
         >
           Start Growing Today
-          <ArrowRightIcon class="w-4 h-4 ml-2" />
+          <Icon name="gravity-ui:arrow-right" class="w-4 h-4 ml-2" />
         </a>
       </div>
     </div>

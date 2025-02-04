@@ -18,7 +18,9 @@
           convert them into customers, and keep them coming back—while ensuring
           it's secure, fast, and always online.
         </p>
-        <div class="flex justify-center gap-5">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-5 w-full max-w-7xl mx-auto px-4 sm:px-6"
+        >
           <button
             class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium inline-flex items-center"
           >
