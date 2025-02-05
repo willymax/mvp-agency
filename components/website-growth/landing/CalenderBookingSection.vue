@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mb-12">
+  <div class="text-center mb-12" id="schedule-call">
     <h2 class="text-3xl font-bold text-gray-900">
       Be quick! Spots are almost gone for {{ currentMonth }}.
     </h2>

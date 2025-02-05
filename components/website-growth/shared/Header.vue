@@ -8,7 +8,7 @@
           <!-- Logo -->
           <div class="flex-shrink-0">
             <img
-              src="~/assets/images/nalgi-labs-logo.svg"
+              src="/nalgi-labs-logo.svg"
               alt="Website Growth Engine"
               class="h-16"
             />

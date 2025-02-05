@@ -1,6 +1,6 @@
 <template>
   <section id="plans" class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
       <!-- Section Heading -->
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-gray-900">Our Service Packages</h2>
@@ -29,34 +29,21 @@
           </div>
 
           <!-- Plan Name -->
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ plan.name }}</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 mt-4">
+            {{ plan.name }}
+          </h3>
 
           <!-- Plan Price -->
           <p class="text-4xl font-bold text-blue-600 mb-4">
             Ksh. {{ plan.price }}<span class="text-base">/month</span>
           </p>
-          <div
-            className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border border-blue-200 dark:bg-gray-800 dark:text-blue-400 dark:border-blue-800"
-          >
-            <div className="flex-shrink-0">
-              <Icon name="gravity-ui:shield" class="text-blue-600 w-6 h-6" />
-            </div>
-            <div className="flex flex-col space-y-1">
-              <span className="text-sm font-bold text-blue-900 leading-tight">
-                {{ plan.guarantee }}
-              </span>
-              <span className="text-xs text-blue-700">
-                No questions asked. No risk on your part.</span
-              >
-            </div>
-          </div>
 
           <!-- Plan Features -->
           <ul class="space-y-3 mb-6 mt-5">
             <li
               v-for="feature in plan.features"
               :key="feature"
-              class="flex items-center"
+              class="flex items-center text-sm"
             >
               <Icon
                 name="gravity-ui:circle-check"
@@ -65,10 +52,34 @@
               {{ feature }}
             </li>
           </ul>
+          <div class="my-6" v-if="index > 0">
+            <div
+              class="inline-flex items-center bg-green-100 px-4 py-2 rounded-lg text-sm font-medium text-green-800"
+            >
+              <svg
+                class="w-5 h-5 mr-2 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <div class="flex flex-col space-y-1">
+                <span class="text-sm font-bold">{{ plan.guarantee }}</span>
+                <span class="text-xs text-green-700">
+                  No questions asked. No risk on your part.</span
+                >
+              </div>
+            </div>
+          </div>
 
           <!-- Plan CTA Button -->
           <a
             :href="plan.ctaLink"
+            target="_blank"
             class="w-full block text-center px-6 py-3 font-semibold rounded-lg transition"
             :class="{
               'bg-blue-100 text-blue-600 hover:bg-blue-200': !plan.isPopular,
@@ -89,7 +100,7 @@ const calendlyLink = 'https://calendly.com/william-k-makau/30min'
 // Define plans data
 const plans = [
   {
-    name: 'Starter Plan',
+    name: 'Maintenance & Optimization',
     // price: 197,
     price: '13,000',
     features: [
@@ -105,7 +116,7 @@ const plans = [
     guarantee: '100% Hack-Free, 99.99% Uptime, 10-Minute Emergency Response',
   },
   {
-    name: 'Website Growth Guarantee',
+    name: 'Website Growth Ignite',
     // price: 499,
     price: '55,000',
     features: [

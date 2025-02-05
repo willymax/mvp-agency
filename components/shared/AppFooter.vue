@@ -66,9 +66,9 @@
           MVPs and full-stack solutions.
         </p>
         <div class="flex items-center space-x-4">
-          <img src="~/assets/images/shield.png" alt="ISO 27001" class="h-8" />
+          <img src="/shield.png" alt="ISO 27001" class="h-8" />
           <img
-            src="~/assets/images/gdpr.png"
+            src="/gdpr.png"
             alt="GDPR Compliant"
             class="h-8"
           />

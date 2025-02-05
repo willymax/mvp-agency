@@ -86,7 +86,7 @@
 
       <div class="mt-12 text-center">
         <a
-          href="#pricing"
+          href="#plans"
           class="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl"
         >
           Start Growing Today

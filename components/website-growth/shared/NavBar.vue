@@ -29,7 +29,7 @@
                   class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
                 >
                   <img
-                    src="~/assets/images/william-makau.jpg"
+                    src="/william-makau.jpg"
                     alt="Website Growth Engine"
                     class="h-10 rounded-full"
                   />
@@ -86,7 +86,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const { isScrolled } = useScroll()
 const isMobileMenuOpen = ref(false)
-const userProfilePic = '~/assets/images/william-makau.jpg'
+const userProfilePic = '/william-makau.jpg'
 
 const navItems = [
   { name: 'Services', href: '#services' },
