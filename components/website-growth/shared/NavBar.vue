@@ -74,6 +74,25 @@
             >
               {{ item.name }}
             </a>
+            <div class="flex items-center justify-center">
+              <NuxtLink
+                to="https://calendly.com/william-k-makau/30min"
+                target="_blank"
+              >
+                <button
+                  class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+                >
+                  <img
+                    src="/william-makau.jpg"
+                    alt="Website Growth Engine"
+                    class="h-10 rounded-full"
+                  />
+                  <span class="text-sm font-medium"
+                    >Book a Call With William</span
+                  >
+                </button>
+              </NuxtLink>
+            </div>
           </div>
         </div>
       </div>

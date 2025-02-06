@@ -4,7 +4,7 @@
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold mb-4">Trusted by Growing Businesses</h2>
         <p class="text-gray-600">
-          Our clients see real results within the first 3 months
+          Our clients see real results within the first 2 months
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

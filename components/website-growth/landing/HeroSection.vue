@@ -18,7 +18,7 @@
           convert them into customers, and keep them coming back—while ensuring
           it's secure, fast, and always online.
         </p>
-        <div class="m-6 w-full">
+        <div class="my-6 w-full text-center">
           <div
             class="inline-flex items-center bg-green-100 px-4 py-2 rounded-lg text-sm font-medium text-green-800"
           >
