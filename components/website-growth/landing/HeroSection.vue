@@ -14,9 +14,9 @@
           Turn Your Website into a 24/7 Sales Machine
         </h1>
         <p class="text-xl mb-8 text-gray-700">
-          We will optimize and maintain your site to attract more visitors,
-          convert them into customers, and keep them coming back—while ensuring
-          it's secure, fast, and always online.
+          We will optimize your site to attract more visitors, convert them into
+          customers, and keep them coming back—while ensuring it's secure, fast,
+          and always online.
         </p>
         <div class="my-6 w-full text-center">
           <div
@@ -46,11 +46,12 @@
         <div
           class="flex flex-col md:flex-row justify-center items-center gap-5 w-full max-w-7xl mx-auto px-4 sm:px-6"
         >
-          <NuxtLink to="#schedule-call">
+          <NuxtLink to="#contact-us">
             <button
               class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium inline-flex items-center"
+              id="hero-call-to-action"
             >
-              Get Your Free Website Audit
+              Start Growing Today
               <svg
                 class="w-5 h-5 ml-2"
                 fill="none"
@@ -69,6 +70,7 @@
           <NuxtLink to="#plans">
             <button
               class="border border-blue-400 hover:bg-blue-800/50 px-8 py-3 rounded-lg font-semibold"
+              id="show-pricing-call-to-action"
             >
               Show Pricing
             </button>

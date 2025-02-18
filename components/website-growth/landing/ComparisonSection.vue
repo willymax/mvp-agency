@@ -4,7 +4,7 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Beyond Just Website Support
+          What Makes Us Different
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
           While traditional services keep your site running, we fuel growth at
@@ -86,8 +86,9 @@
 
       <div class="mt-12 text-center">
         <a
-          href="#plans"
+          href="#contact-us"
           class="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-lg hover:shadow-xl"
+          id="comparison-call-to-action"
         >
           Start Growing Today
           <Icon name="gravity-ui:arrow-right" class="w-4 h-4 ml-2" />
