@@ -27,6 +27,7 @@
               >
                 <button
                   class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+                  id="nav-book-a-call-web"
                 >
                   <img
                     src="/william-makau.jpg"
@@ -81,6 +82,7 @@
               >
                 <button
                   class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
+                  id="nav-book-a-call-mobile"
                 >
                   <img
                     src="/william-makau.jpg"

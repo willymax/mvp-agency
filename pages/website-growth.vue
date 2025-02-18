@@ -1,17 +1,13 @@
 <template>
-  <div class="flex flex-col gap-16">
+  <div class="flex flex-col">
     <WebsiteGrowthLandingHeroSection />
     <WebsiteGrowthLandingSocialProofSection />
     <WebsiteGrowthLandingFeaturesSection />
     <WebsiteGrowthLandingHowItWorksSection />
-    <WebsiteGrowthLandingBenefitsSection />
-    <WebsiteGrowthLandingRoadMapSection />
     <WebsiteGrowthLandingComparisonSection />
-    <WebsiteGrowthLandingTestimonialsSection />
     <WebsiteGrowthLandingPricingSection />
     <WebsiteGrowthLandingFAQSection />
-    <WebsiteGrowthLandingFreeAuditSection />
-    <WebsiteGrowthLandingCalenderBookingSection />
+    <WebsiteGrowthSharedContactForm />
   </div>
 </template>
 
