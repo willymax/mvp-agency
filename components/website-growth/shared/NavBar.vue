@@ -15,6 +15,7 @@
               v-for="item in navItems"
               :key="item.name"
               :href="item.href"
+              :id="item.id"
               class="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
             >
               {{ item.name }}
@@ -110,9 +111,13 @@ const isMobileMenuOpen = ref(false)
 const userProfilePic = '/william-makau.jpg'
 
 const navItems = [
-  { name: 'Services', href: '#services' },
-  { name: 'How It Works', href: '#how-it-works' },
-  { name: 'Pricing', href: '#plans' },
+  { name: 'Services', href: '#services', id: 'nav-bar-services-menu' },
+  {
+    name: 'How It Works',
+    href: '#how-it-works',
+    id: 'nav-bar-how-it-works-menu',
+  },
+  { name: 'Pricing', href: '#plans', id: 'nav-bar-pricing-menu' },
   // { name: 'Case Studies', href: '#case-studies' },
 ]
 const handleCtaClick = () => {}
