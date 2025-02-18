@@ -79,7 +79,7 @@
           <!-- Plan CTA Button -->
           <a
             :href="plan.ctaLink"
-            target="_blank"
+            :id="plan.id"
             class="w-full block text-center px-6 py-3 font-semibold rounded-lg transition"
             :class="{
               'bg-blue-100 text-blue-600 hover:bg-blue-200': !plan.isPopular,
@@ -111,14 +111,15 @@ const plans = [
       'Free Website Audit (Valued at $200)',
     ],
     ctaText: 'Get Started',
-    ctaLink: calendlyLink,
+    ctaLink: '#contact-us',
+    id: 'maintenance-and-optimization-package',
     isPopular: false,
     guarantee: '100% Hack-Free, 99.99% Uptime, 10-Minute Emergency Response',
   },
   {
     name: 'Website Growth Ignite',
     // price: 499,
-    price: '55,000',
+    price: '35,000',
     features: [
       '30-Day "First Page or Free" SEO Guarantee',
       'Turn website visitors into leads (2x conversion rate)',
@@ -127,7 +128,8 @@ const plans = [
       'FREE Premium Analytics Dashboard ($299/mo value)',
     ],
     ctaText: 'Select Growth Plan',
-    ctaLink: calendlyLink,
+    ctaLink: '#contact-us',
+    id: 'website-growth-ignite-package',
     isPopular: true,
     guarantee:
       'Double your website leads in 90 days or we work free until you do', // Risk reversal
@@ -135,7 +137,7 @@ const plans = [
   {
     name: 'All-Access Revenue Engine',
     // price: 997,
-    price: '105,000',
+    price: '75,000',
     features: [
       'Everything in Growth',
       'Guaranteed 100 Qualified Leads/Month',
@@ -145,7 +147,8 @@ const plans = [
       'Free Quarterly Business Review (Valued at $300)',
     ],
     ctaText: 'Explore Pro Options',
-    ctaLink: calendlyLink,
+    ctaLink: '#contact-us',
+    id: 'all-access-revenue-engine-package',
     isPopular: false,
     guarantee: 'Generate $25,000 in new revenue within 3 months or pay nothing',
     // High-stakes guarantee
