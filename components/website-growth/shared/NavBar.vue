@@ -71,6 +71,7 @@
               v-for="item in navItems"
               :key="item.name"
               :href="item.href"
+              :id="item.id"
               class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50"
               @click="isMobileMenuOpen = false"
             >
@@ -118,6 +119,7 @@ const navItems = [
     id: 'nav-bar-how-it-works-menu',
   },
   { name: 'Pricing', href: '#plans', id: 'nav-bar-pricing-menu' },
+  { name: 'Contact Us', href: '#contact-us', id: 'nav-bar-contact-us' },
   // { name: 'Case Studies', href: '#case-studies' },
 ]
 const handleCtaClick = () => {}
